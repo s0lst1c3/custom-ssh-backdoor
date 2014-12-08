@@ -46,7 +46,6 @@ try:
     chan = t.accept(20)
     print '[+] Authenticated!'
     print chan.recv(1024)
-    chan.send('Yeah i can see this')
     while True:
         command= raw_input("Enter command: ").strip('n')
         chan.send(command)
